@@ -1,0 +1,50 @@
+#titulo {
+    color: green;
+    text-align: center;
+}
+
+/* Vale soemente para elementos tipo <p> com id igual a descrição */
+p#descricao {
+    color: blue;
+}
+
+p.promocao {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+h1.promocao {
+    color: yellow
+}
+
+.nova {
+    color: white;
+}
+
+/* todo p que tenha a classe final-pagina e cujo id
+seja rodape */
+p.final-pagina#rodape {
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* todo curso tem essa cor de fundo */
+.curso {
+    background-color: aliceblue;
+}
+
+/* veja a cor de fundo repetida para que possamos
+    especificar uma regra não aplicável aos demais cursos
+    */
+.novo-curso {
+    background-color: aliceblue;
+    color: red;
+}
+
+.curso, .novo-curso, #contato {
+    /* padding: espaço entre o conteúdo e a borda.
+    Veremos mais sobre isso adiante */
+    padding: 12px;
+    /* estudaremos mais sobre bordas também */
+    border: 1px solid lightgray;
+}
