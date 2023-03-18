@@ -45,3 +45,33 @@ p {
 }
 ```
 > O `!important` sobreescreve todas as definições de `<style>`
+
+<br/>
+<br/>
+
+# Aula 4
+## `<a>` - In Line, faz com que os itens possam ficar um do lado do outro, ocupando somente o espaço necessário
+
+### Pode-se colocar isso também na definição da classe:
+```css
+.engenharia {
+display: inline-block;
+width: 300px;
+height: 200px;
+}
+.farmacia {
+display: inline-block;
+width: 300px;
+height: 200px;
+}
+```
+<br/>
+<br/>
+
+### Para não mostrar um elemento:
+```css
+.rodape{
+display: none;
+}
+```
+
