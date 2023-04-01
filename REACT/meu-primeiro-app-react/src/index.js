@@ -7,6 +7,10 @@ const App = () => {
         backgroundColor: 'blueviolet', color: 'white', border: 'none', width: "100%",
         borderRadius: 8
     };
+    const textoDoRotulo = "Nome:";
+    const obterTextoDoBotao = () => {
+        return "Enviar";
+    }
     return (
         <div style={{
             margin: 'auto', width: 768, backgroundColor: '#EEE', padding:
@@ -15,19 +19,16 @@ const App = () => {
             <label className="rotulo" htmlFor="nome" style={{
                 display: 'block',
                 marginBottom: 4
-            }}>Nome:</label>
+            }}>{textoDoRotulo}</label>
             <input type="text" id="nome" style={{
                 paddingTop: 8, paddingBottom: 8,
                 borderStyle: 'hidden', width: '100%', borderRadius: 8, outline: 'none', boxSizing:
                     'border-box'
             }} />
-            <button style={estilosBotao}>Enviar</button>
+            <button style={estilosBotao}>{obterTextoDoBotao()}</button>
         </div>
     )
 }
-
-
-
 ReactDOM.render(
     <App />,
     document.querySelector("#root")
