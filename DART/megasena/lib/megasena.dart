@@ -44,7 +44,7 @@ int pegaNumUsuario() {
 }
 
 int pegaNumLoteria() {
-  var buf = gerador.nextInt(61);
+  var buf = gerador.nextInt(60)+1;
   if (numLot.isNotEmpty) {
     // exibe('não vazio');
     for (final num in numLot) {

@@ -1,10 +1,10 @@
 void main(List<String> arguments) {
-  print(arguments);
-
-var soma = 0;
-  for(final valor in arguments){
-      soma += int.parse(valor);
-  }
-
-  print(soma);
+//ok
+  var nomes = {'Ana', 'João'};
+  print(nomes);
+//_Set<String>
+  print(nomes.runtimeType);
+//ok também, mas vai conter somente um "Brasil"
+  var paises = {'Brasil', 'Brasil'};
+  print(paises);
 }
