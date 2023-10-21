@@ -13,20 +13,20 @@ class App extends StatefulWidget {
 }
 
 class AppState extends State<App> {
-  int numeroImagens = 0;
+  int numeroImagens = 1;
   List<ImageModel> imagens = [];
 
   void obterImagem() async{
     var url = Uri.https(
       'api.pexels.com',
       '/v1/search',
-      {'query': 'people', 'page': '1', 'perpage': '1'},
+      {'query': 'people', 'page': '$numeroImagens', 'perpage': '1'},
     );
     var req = http.Request('get', url);
     req.headers.addAll(
       {
         'Authorization':
-            'qxgMkjYLkHxN7q4qXM62zWTJ2FZdpD73YR0xDKszVp9YLFI26CsqeOoU',
+            'CHAVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE',
       },
     );
     final result = await req.send();
@@ -35,6 +35,8 @@ class AppState extends State<App> {
         var decodedJSON = json.decode(response.body);
         var imagem = ImageModel.fromJSON(decodedJSON);
         setState(() {
+          // incremento de imagens a cada clique 
+          numeroImagens++;
           imagens.add(imagem);
         });
       } else {

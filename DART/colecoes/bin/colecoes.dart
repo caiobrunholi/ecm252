@@ -1,10 +1,19 @@
+import 'dart:io';
+
+
 void main(List<String> arguments) {
-//ok
-  var nomes = {'Ana', 'João'};
-  print(nomes);
-//_Set<String>
-  print(nomes.runtimeType);
-//ok também, mas vai conter somente um "Brasil"
-  var paises = {'Brasil', 'Brasil'};
-  print(paises);
+  // // coleções de coleções
+  // var filmes = <Map<String, dynamic>>[];
+  // print(filmes.runtimeType);
+
+  // print('Titulo?');
+  // String? titulo = stdin.readLineSync();
+  // print('Gênero?');
+  // String? genero = stdin.readLineSync();
+  // var notas = [5,5];
+  // filmes.add({'titulo':titulo, 'genero':genero, 'notas':notas});
+  // print(filmes);
+
+  // collection if
+  
 }
